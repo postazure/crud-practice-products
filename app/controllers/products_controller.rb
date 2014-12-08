@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     @product.save
 
-    redirect_to @product
+    redirect_to @product, notice: "Product created successfully"
   end
 
   def show
